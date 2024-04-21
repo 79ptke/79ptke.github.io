@@ -1,0 +1,215 @@
+.Aside {
+    top: 0;
+    left: 0;
+    width: 32rem;
+    height: 100vh;
+    border-right: 0.1rem solid var(--border-color);
+    background: #fff;
+}
+
+.Aside.aside_close {
+    display: none;
+}
+
+.Aside_top_wrapper {
+    width: 100%;
+    height: 14.8rem;
+    padding: 1.6rem 1.6rem 1.2rem;
+    box-sizing: border-box;
+}
+
+.Aside_file_btn_wrapper {
+    margin-bottom: 1.6rem;
+}
+
+.Aside_file_btn {
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 0.6rem;
+    background: var(--bg-color);
+}
+
+.Aside_icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.Aside_icon_arrow_wrapper {
+    position: absolute;
+    top: 50%;
+    right: 1.2rem;
+    transform: translateY(-50%);
+}
+
+.Aside_file_btn_wrapper span {
+    margin-left: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.Aside_branch_picker_wrapper {
+    margin-bottom: 0.8rem;
+}
+
+.Aside_branch_picker_wrapper
+
+.aside_border, .Aside_textInput_wrapper {
+    height: 3.2rem;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+}
+
+.Aside_branch_picker {
+    position: relative;
+    width: 21.6rem;
+    padding: 0 1.2rem;
+    background: var(--bg-color);
+}
+
+.Aside_branch_picker span {
+    margin-left: 1rem;
+    line-height: 1;
+}
+
+.Aside_octicon_btn_wrapper {
+    width: 6.4rem;
+    margin-left: 0.8rem;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.Aside .octicon_icon {
+    width: 50%;
+    height: 100%;
+    line-height: 1;
+}
+
+.octicon_plus {
+    border-right: 0.1rem solid var(--border-color);
+}
+
+.Aside_textInput_wrapper {
+    position: relative;
+    padding: 0 1.2rem;
+}
+
+.Aside_textInput {
+    height: 100%;
+    margin-left: 0.8rem;
+    border: 0;
+}
+
+.Aside_textInput_icon {
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    transform: translateY(-50%);
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.4rem;
+    background: var(--bg-color);
+}
+
+.Aside_bottom_wrapper {
+    padding: 0 1.6rem;
+}
+
+.Asdie_treeView_containers > div {
+    gap: 0.8rem;
+    padding: 0.8rem 1.6rem 0.8rem 0;
+    box-sizing: border-box;
+}
+
+.Asdie_treeView_container.list {
+    padding-left: 1.6rem;
+}
+
+.list:hover {
+    background: var(--bg-color);
+}
+
+.list.on {
+    position: relative;
+    border-radius: 0.8rem;
+    background: var(--bg-color);
+}
+
+.list.on::before {
+    clear: both;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -0.8rem;
+    transform: translateY(-50%);
+    width: 0.4rem;
+    height: 2.4rem;
+    border-radius: 1rem;
+    background: #0969da;
+}
+
+.Asdie_treeView_containers .flex svg {
+    margin-right: 1rem;
+}
+
+.Asdie_treeView_containers.open .flex svg:first-child {
+    transform: rotate(90deg);
+}
+
+.Asdie_treeView_containers.open .flex svg:nth-child(2) {
+    display: block;
+}
+
+.Asdie_treeView_containers.open .flex svg:nth-child(3) {
+    display: none;
+}
+
+.Asdie_treeView_containers.close .flex svg:nth-child(3) {
+    display: block;
+}
+
+.Asdie_treeView_containers.close .flex svg:nth-child(2) {
+    display: none;
+}
+
+.Asdie_treeView_containers.close ul {
+    display: none;
+}
+
+.Asdie_treeView_container > a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-left: 1.6rem;
+    padding: 0.8rem 1.6rem 0.8rem 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1012px) {
+    .Aside {
+        position: fixed;
+        top: 0;
+        width: 44rem;
+        border: 0;
+        border-top-right-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+        box-shadow: 5px 0px 10px -2px #e3e7eb;;
+        z-index: 1;
+    }
+
+    .Aside_branch_picker {
+        width: calc(100% - 7rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Aside {
+        top: 10.4rem;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
