@@ -1,0 +1,68 @@
+{
+    "projectPersonal": [       
+        {
+            "id": 1,
+            "title": "2024 깃허브 스타일 개인 포트폴리오",
+            "description": [
+                "useState, useEffect 등 사용",
+                "GitHub Pages로 배포",
+                "Flex,Grid, --var 등 사용",
+                "하드코딩 대신 데이터를 json 파일로 만들어서 화면에 뿌려줌.",
+                "Email.js 사용",
+                "svg 스프라이트 기법을 사용해서 유지보수를 용이하게 함."
+            ],
+            "img": "https://velog.velcdn.com/images/79ptke/post/7886f53a-c15b-4de2-98ce-1afc34fd49c9/image.png",
+            "link": "",
+            "site": ""
+        },       
+        {
+            "id": 2,
+            "title": "썸네일 만들어주는 사이트 'thumbCraft'",
+            "description": [
+                "useState, useEffect, useRef을 사용",
+                "props를 통해 상위 컴포넌트에서 하위 컴포넌트로 데이터를 전달.",
+                "상태에 따라 특정 UI 요소를 조건부로 렌더링.",
+                "html2canvas 라이브러리를 사용하여 특정 영역을 이미지로 다운로드하는 기능을 구현."
+            ],
+            "img": "https://velog.velcdn.com/images/79ptke/post/009bc10b-12f2-426d-a0c7-5b8761917d0f/image.png",
+            "link": "https://stupendous-caramel-85564d.netlify.app/",
+            "site": "https://github.com/79ptke/thumbCraft?tab=readme-ov-file"
+        },       
+        {
+            "id": 3,
+            "title": "쇼핑몰 장바구니 기능 '멍멍마켓'",
+            "description": [
+                "Redux State Management, React-Redux 사용, React Router 활용. ",
+                "localStorage를 사용하여 데이터를 저장하고 가져옴.",
+                "FontAwesome 아이콘 라이브러리를 사용하여 아이콘을 삽입하고 스타일링."
+            ],
+            "img": "https://velog.velcdn.com/images/79ptke/post/0650cd3d-1e55-471d-99c9-9314e28c0bfd/image.png",
+            "link": "https://clever-meerkat-59ecf3.netlify.app/",
+            "site": "https://github.com/79ptke/shopping_cart?tab=readme-ov-file"
+        },       
+        {
+            "id": 4,
+            "title": "홍대 프렌차이즈 카페를 찾아주는 사이트 'cafe map'",
+            "description": [
+                "React 및 Kakao Maps API를 활용하여 동적 지도와 마커를 구현한 웹 애플리케이션을 개발.",
+                "실제 지도를 표시하고, 원하는 프렌차이즈 마커만 표시되도록 사용자가 버튼을 클릭할 때마다 해당 카페 마커를 동적으로 나타내어 편의성 향상.",
+                "함수형 컴포넌트와 useEffect 훅을 적용하여 컴포넌트의 라이프사이클을 관리."
+            ],
+            "img": "https://velog.velcdn.com/images/79ptke/post/879635e0-021f-40b9-9f41-e18e1bcfd925/image.png",
+            "link": "https://enchanting-bublanina-7e9b04.netlify.app/",
+            "site": "https://github.com/79ptke/cafe_Map?tab=readme-ov-file"
+        },       
+        {
+            "id": 5,
+            "title": "d3.js를 이용한 막대 그래프와 선 그래프",
+            "description": [
+                "React 및 Kakao Maps API를 활용하여 동적 지도와 마커를 구현한 웹 애플리케이션을 개발.",
+                "실제 지도를 표시하고, 원하는 프렌차이즈 마커만 표시되도록 사용자가 버튼을 클릭할 때마다 해당 카페 마커를 동적으로 나타내어 편의성 향상.",
+                "함수형 컴포넌트와 useEffect 훅을 적용하여 컴포넌트의 라이프사이클을 관리."
+            ],
+            "img": "https://velog.velcdn.com/images/79ptke/post/deca99ae-e6c7-4578-a676-c0bd9d18b777/image.png",
+            "link": "",
+            "site": "https://github.com/79ptke/d3_js/blob/master/d3.html"
+        }
+    ]
+}
