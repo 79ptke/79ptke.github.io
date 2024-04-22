@@ -8,6 +8,7 @@ import IconSVG from '../components/IconSvg';
 function Aside({ onLinkClick, onToggleAside, isAsideOpen }) {
 
     const [isOpen, setIsOpen] = useState(true);
+    const [scrollDistance, setScrollDistance] = useState(0)
 
     useEffect(() => {
         const handleResize = () => {
@@ -18,11 +19,19 @@ function Aside({ onLinkClick, onToggleAside, isAsideOpen }) {
             }
         };
 
+        const handleScroll = () => {
+            const scrolled = window.scrollY;
+            setScrollDistance(scrolled);
+        };
+
         window.addEventListener('resize', handleResize);
+        window.addEventListener('scroll', handleScroll);
         handleResize();
+        handleScroll();
 
         return () => {
             window.removeEventListener('resize', handleResize);
+            window.removeEventListener('scroll', handleScroll); 
         };
     }, [isAsideOpen]);
 
@@ -41,14 +50,12 @@ function Aside({ onLinkClick, onToggleAside, isAsideOpen }) {
         });
     };
 
-    
-
     const handleAsideButtonClick = () => {
         onToggleAside(!isAsideOpen); 
     };
 
     return (
-        <div className={`Aside ${isAsideOpen ? 'aside_open' : 'aside_close'}`}>
+        <div className={`Aside ${isAsideOpen ? 'aside_open' : 'aside_close'}`} style={{ top: window.innerWidth <= 768 ? `calc(104px - ${scrollDistance}px)` : '0' }}>
             <div className="Aside_top_wrapper">
                 <div className="Aside_file_btn_wrapper flex">
                     <button type="button" className="Aside_file_btn flex" onClick={handleAsideButtonClick}>

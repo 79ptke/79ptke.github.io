@@ -28,6 +28,7 @@ form label {
 .form_textarea > textarea {
     height: 20rem;
     margin-top: 2.4rem;
+    padding: 1.2rem;
     border: 0.2rem solid #8294E2;
     box-sizing: border-box;
 }

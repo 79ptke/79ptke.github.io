@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import '../styles/common.css';
 import '../styles/contact.css';
@@ -20,6 +20,13 @@ function Line({ lineNumber, text }) {
 
 function Contact () {
     const formRef = useRef();
+    const [phone, setPhone] = useState('');
+
+    const handleChange = (event) => {
+        const { value } = event.target;
+        const cleanedValue = value.replace(/[^0-9]/g, '');
+        setPhone(cleanedValue);
+    };
 
     const sendEmail = (event) => {
         event.preventDefault();
@@ -35,6 +42,7 @@ function Contact () {
                 (result) => {
                 console.log(result.text);
                 formRef.current.reset();
+                alert("이메일이 성공적으로 전송되었습니다!");
                 },
                 (error) => {
                 console.log(error.text);
@@ -75,7 +83,7 @@ function Contact () {
                 </div>
                 <div className="input_wrapper">
                     <label htmlFor="phone">phone</label>
-                    <input type="phone" id="phone" name="phone" />
+                    <input type="tel" id="phone" name="phone" value={phone} onChange={handleChange} />
                 </div>
             </div>
             <div className="form_textarea">

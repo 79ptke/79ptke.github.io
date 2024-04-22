@@ -16,7 +16,6 @@ function Header() {
                                 <FontAwesomeIcon icon={faBars} />
                         </button>
                         <a href="#!">
-                            {/* <img src={logo} alt="로고" className="logo"/> */}
                             <IconSVG id="logo" width="32" height="32"/>
                         </a>
                         <p className="AppHeader_context_item_label">JungDaHee / <b>Portfolio</b></p>

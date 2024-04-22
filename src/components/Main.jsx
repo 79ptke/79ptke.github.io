@@ -10,7 +10,6 @@ function Main() {
     const [selectedText, setSelectedText] = useState('');
     const [isAsideOpen, setIsAsideOpen] = useState(window.innerWidth > 1012);
 
-
     useEffect(() => {
         const handleScroll = () => {
             const currentPosition = window.pageYOffset;
@@ -22,10 +21,16 @@ function Main() {
             }
         };
 
+        const handleResize = () => {
+            setIsAsideOpen(window.innerWidth > 1021);
+        };
+
         window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
 
