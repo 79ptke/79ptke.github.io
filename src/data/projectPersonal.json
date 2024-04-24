@@ -3,6 +3,11 @@
         {
             "id": 1,
             "title": "2024 깃허브 스타일 개인 포트폴리오",
+            "period": "작업기간 : 3주",
+            "func": "주요기능 : 퍼블리셔로서 작업했던 작업물을 담은 깃허브 스타일 포트폴리오",
+            "designtool": "Design Tool : figma",
+            "editor": "Editor : VScode",
+            "build": "배포 : GitHub Pages",
             "description": [
                 "useState, useEffect 등 사용",
                 "GitHub Pages로 배포",
@@ -13,11 +18,16 @@
             ],
             "img": "https://velog.velcdn.com/images/79ptke/post/7886f53a-c15b-4de2-98ce-1afc34fd49c9/image.png",
             "link": "",
-            "site": ""
+            "site": "https://github.com/79ptke/79ptke.github.io"
         },       
         {
             "id": 2,
             "title": "썸네일 만들어주는 사이트 'thumbCraft'",
+            "period": "작업기간 : 3주",
+            "func": "주요기능 : artboard의 크기, 레이아웃 변경 / 배경 및 텍스트 색상 변경 / 이미지 업로드 및 다운로드 / artboard 초기화",
+            "designtool": "Design Tool : illustration",
+            "editor": "Editor : VScode",
+            "build": "배포 : netlify",
             "description": [
                 "useState, useEffect, useRef을 사용",
                 "props를 통해 상위 컴포넌트에서 하위 컴포넌트로 데이터를 전달.",
@@ -31,6 +41,11 @@
         {
             "id": 3,
             "title": "쇼핑몰 장바구니 기능 '멍멍마켓'",
+            "period": "작업기간 : 2주",
+            "func": "주요기능 : 제품 추가 기능 / 장바구니 목록 표시 / 제품 수량 조절 / 제품 삭제 기능 / 총 가격 표시",
+            "designtool": "",
+            "editor": "Editor : VScode",
+            "build": "배포 : netlify",
             "description": [
                 "Redux State Management, React-Redux 사용, React Router 활용. ",
                 "localStorage를 사용하여 데이터를 저장하고 가져옴.",
@@ -43,6 +58,11 @@
         {
             "id": 4,
             "title": "홍대 프렌차이즈 카페를 찾아주는 사이트 'cafe map'",
+            "period": "작업기간 : 4일",
+            "func": "주요기능 : 버튼 클릭 시 원하는 마커만 표시 / Kakao map API 사용",
+            "designtool": "Design Tool : Photoshop",
+            "editor": "Editor : VScode",
+            "build": "배포 : netlify",
             "description": [
                 "React 및 Kakao Maps API를 활용하여 동적 지도와 마커를 구현한 웹 애플리케이션을 개발.",
                 "실제 지도를 표시하고, 원하는 프렌차이즈 마커만 표시되도록 사용자가 버튼을 클릭할 때마다 해당 카페 마커를 동적으로 나타내어 편의성 향상.",
@@ -55,6 +75,11 @@
         {
             "id": 5,
             "title": "d3.js를 이용한 막대 그래프와 선 그래프",
+            "period": "작업기간 : 7일",
+            "func": "주요기능 :  json 데이터를 시각화하여 그래프로 구현",
+            "designtool": "",
+            "editor": "Editor : VScode",
+            "build": "",
             "description": [
                 "React 및 Kakao Maps API를 활용하여 동적 지도와 마커를 구현한 웹 애플리케이션을 개발.",
                 "실제 지도를 표시하고, 원하는 프렌차이즈 마커만 표시되도록 사용자가 버튼을 클릭할 때마다 해당 카페 마커를 동적으로 나타내어 편의성 향상.",
